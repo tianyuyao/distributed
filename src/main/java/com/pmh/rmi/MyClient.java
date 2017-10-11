@@ -13,7 +13,8 @@ import java.rmi.RemoteException;
 public class MyClient {
 	public static void main(String[] args) throws MalformedURLException, RemoteException, NotBoundException {
 		// 服务引入
-		MyService service = (MyService) Naming.lookup("rmi://localhost:8080/myservice");
+//		MyService service = (MyService) Naming.lookup("rmi://localhost:8080/myservice");
+		MyService service = (MyService) Naming.lookup("rmi://localhost:9000/hello");
 		// 远程调用方法
 		System.out.println("远程调用：" + service.handler());
 	}

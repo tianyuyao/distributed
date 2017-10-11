@@ -1,5 +1,9 @@
 package com.pmh.distributedev;
 
+import org.apache.thrift.TException;
+
+import com.pmh.thrift.SimpleInvoker;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -35,4 +39,5 @@ public class AppTest
     {
         assertTrue( true );
     }
+    
 }
